@@ -40,3 +40,10 @@ pub fn loop_array() {
     }
 }
 
+pub fn loop_enum(){
+  let students: [&str; 5] = ["zad", "Abel", "Tom", "Purity", "Diana"]; 
+
+  for (index, i) in {1..5}.enumerate(){
+    println!("{0}: {1} * {1} => {2}", index, i , {i * i});
+  }
+}

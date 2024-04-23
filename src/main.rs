@@ -1,17 +1,18 @@
-#[allow(unused_assignments)]
-#[allow(dead_code)]
+#![allow(unused_assignments)]
+#![allow(dead_code)]
+#![allow(unused_variables)]
 mod player;
 mod structures;
 mod forloop;
-
+mod whileloop;
 
 
 fn main() {
     let last_name: &str = "Mainda";
     let salam = player::greeter::hello_name(last_name);
-    println!("{}", salam);
-    player::play_movie("Rambo: First Blood");
-    player::play_audio("Ariana Grande's: Girls");
+    // println!("{}", salam);
+    // player::play_movie("Rambo: First Blood");
+    // player::play_audio("Ariana Grande's: Girls");
 
     let array: [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -50,7 +51,14 @@ fn main() {
     // forloop::loop_str();
     // forloop::loop_str_2();
     // forloop::loop_str_3();
-    forloop::loop_array()
+    // forloop::loop_array();
+    // forloop::loop_enum();
+    // whileloop::get_squares(100);
+    // whileloop::get_cubes(300);
+
+
+
+    
 
 
 }
