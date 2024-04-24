@@ -31,8 +31,7 @@ pub fn loop_array() {
         if pet == &{ "Cat" } {
             println!("I like meowing because I am { }", pet);
             continue;
-        }
-        else if pet == &{"Hen"} {
+        } else if pet == &{ "Hen" } {
             println!("{}s are meant to be eaten", pet);
             break;
         }
@@ -40,10 +39,10 @@ pub fn loop_array() {
     }
 }
 
-pub fn loop_enum(){
-  let students: [&str; 5] = ["zad", "Abel", "Tom", "Purity", "Diana"]; 
+pub fn loop_enum() {
+    let students: [&str; 5] = ["zad", "Abel", "Tom", "Purity", "Diana"];
 
-  for (index, i) in {1..5}.enumerate(){
-    println!("{0}: {1} * {1} => {2}", index, i , {i * i});
-  }
+    for (index, i) in { 1..5 }.enumerate() {
+        println!("{0}: {1} * {1} => {2}", index, i, { i * i });
+    }
 }

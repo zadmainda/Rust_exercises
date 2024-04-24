@@ -7,8 +7,8 @@ pub fn play_audio(song: &str) {
 }
 
 pub mod greeter {
-  pub fn hello_name(name: &str) -> String {
-      let greeting = format!("Hello {}", name);
-      return greeting;
-  }
+    pub fn hello_name(name: &str) -> String {
+        let greeting = format!("Hello {}", name);
+        return greeting;
+    }
 }
