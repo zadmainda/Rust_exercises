@@ -14,10 +14,11 @@ impl Employee {
             &self.name, &self.gender, &self.age
         )
     }
-
+    //STATI METHOD
     pub fn display_employee(param: Employee){
       println!("{0} is of {1} gender", param.name, param.gender);
 
     }
 }
+
 

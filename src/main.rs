@@ -13,6 +13,9 @@ mod slicers;
 mod strings;
 mod structures;
 mod whileloop;
+mod enums;
+pub mod vectors;
+
 
 fn main() {
     let last_name: &str = "Mainda";
@@ -95,7 +98,12 @@ fn main() {
 
     // High order function
 
+
+    enums::categorize_bike(enums::Bicycles::Giant) ;
+
     let square = |a: i32| a * a;
 
-    hof::apply(square, 6)
+    hof::apply(square, 6);
+
+
 }
